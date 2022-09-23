@@ -37,7 +37,7 @@ contact_bg.onclick = () =>{
 
 
 $(document).ready(function () {
-    $('#datatablesapi').DataTable({
+    $('#searchcontact').DataTable({
         "pagingType" : "full_numbers",
         "lengthMenu": [
             [10,25,50,-1],

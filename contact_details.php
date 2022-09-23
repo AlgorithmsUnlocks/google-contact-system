@@ -11,7 +11,7 @@
             $query = "SELECT * FROM `contact`";
             $query_run = mysqli_query($db_conn,$query);
         ?>
-    <table class="table table-bordered" id="datatablesapi" width="100%" cellspacing="0" id="datatablesapi">
+     <table class="table table-bordered" id="datatablesapi" width="100%" cellspacing="0" id="searchcontact">
                     <thead>
                         <tr>
                             <th>Name </th>

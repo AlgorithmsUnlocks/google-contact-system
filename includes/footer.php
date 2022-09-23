@@ -8,22 +8,20 @@
                   count_contact.classList.toggle('show');
               
               }
-              
               $(document).ready(function () {
-                      $('#datatablesapi').DataTable({
-                          "pagingType" : "full_numbers",
-                          "lengthMenu": [
-                              [10,25,50,-1],
-                              [10,25,50,"All"]
-                          ],
-                          responsive : true,
-                          language : {
-                              search : "_INPUT_",
-                              searchPlaceholder: "search cse teacher"
-                          }, 
-                      });
-                  });
-              
+    $('#searchcontact').DataTable({
+        "pagingType" : "full_numbers",
+        "lengthMenu": [
+            [10,25,50,-1],
+            [10,25,50,"All"]
+        ],
+        responsive : true,
+        language : {
+            search : "_INPUT_",
+            searchPlaceholder: "search contact"
+        }, 
+    });
+});
               </script>
   </body>
 </html>
