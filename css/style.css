@@ -1,0 +1,206 @@
+/* Adding Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+
+}   
+ 
+ :root{
+     --blue:#00b8b8;
+     --black:#333;
+     --white:#fff;
+     --light-color:#666;
+     --light-bg:#eee;
+     --border:.2rem solid rgba(0,0,0,.1);
+     --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+ *::-webkit-scrollbar{
+     height: .2rem;
+     width: 0.7rem;
+  }
+  
+  *::-webkit-scrollbar-track{
+     background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb{
+     background-color: var(--blue);
+  }
+
+  button:focus{
+   border: none;
+   outline: 2px dashed var(--blue);
+  }
+  a{
+   color: var(--black)!important;
+  }   
+  a:hover{
+   text-decoration: none;
+  }
+ /* Responsive Header Style One */
+
+ header {
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem 1rem;
+    background-color: white;
+ }
+ header.active{
+    box-shadow: var(--box-shadow);
+    border: 0;
+ }
+ header .logo{
+    font-size: 1.5rem;
+    color: var(--black);
+ }
+ header .logo span{
+    color: var(--blue);   
+ }
+ header .navbar a{
+    margin: 0 0.8rem;
+    font-size: 1.1rem;
+    color: var(--black)
+ }
+ header .navbar a:hover{
+    color: var(--blue);
+    transition: all 0.5s ease;
+ }
+ header .link-btn{
+    background-color: var(--blue);
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 0.5rem;
+ }
+ header #menu-btn{
+    color: var(--black);
+    font-size: 1.5rem;
+    display: none;
+ }
+ @media screen and (max-width: 992px) {
+    header .link-btn{
+       display: none;
+    }
+    header .navbar a{
+       margin: 0 0.5rem;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    header #menu-btn{
+       display: inline-block;
+    }
+    header .navbar{
+       position: absolute;
+       top: 99%;
+       left: 0;
+       background-color: #00b8b8;
+       right: 0;
+       flex-direction: column;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+ 
+    }
+    header .navbar a{
+       padding: 0.5rem 0;
+ 
+    }
+    header #menu-btn.fa-xmark{
+       transition: all 0.5s ease;
+       transform: rotate(270deg);
+    }
+    
+    header .navbar.active{
+       transition: all 0.5s ease;
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ 
+    }
+ }
+
+
+ .contacts-up{
+    display: inline-block;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    padding-left: 8px;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+    font-weight: 500;
+ }
+
+ /* Search Bar  */
+ .header-left-items #search-contact{
+    background: #343a401f;
+    border: 1px solid transparent;
+    position: relative;
+    padding: 0.8rem 3rem;
+    width: 680px;
+    border-radius: 8px; 
+ }
+ .search-icon-top{
+    position: absolute;
+    top: 41px;
+    margin-left: 15px;
+    color: var(--light-color);
+ }
+ .help-menu i,.setting-menu i,.google-apps i,.google-account i{
+    font-size: 25px;
+ }
+
+ /* Main Content Section */
+
+.create-contact-btn{
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   padding: 0.8rem 2.5rem;
+   border-radius: 50px;
+   font-size: 18px;
+ }
+ .create-contact-btn:hover{
+   box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+ }
+ .pop-contact-add{
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   padding: 20px 0;
+   display: none;
+ }
+ .pop-contact-add.active{
+   display: inline-block;
+   margin-top: -10px;
+ }
+ .pop-contact-add h6{
+   font-size: 18px;
+   margin: 10px 0;
+   padding: 10px 15px;
+ }
+ .pop-contact-add h6:hover {
+   font-size: 18px;
+   margin: 10px 0;
+   background: #6c757d24;
+   padding: 10px 15px;
+}
+.contact-bg a, .contact-bg a span, .contact-bg a i {
+    color: #1967d2!important;
+}
+.contact-bg {
+   padding: 12px 35px;
+   border-radius: 0 50px 50px 0;
+}
+.contact-bg:hover{
+   background: #1966d216;
+}
+.contact-bg.active {
+    background: #1967d22b;
+    padding: 12px 35px;
+   border-radius: 0 50px 50px 0;
+}
+ 
+ 
