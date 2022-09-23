@@ -14,7 +14,7 @@
                         <img src="assets/icons/contacts_48dp.png" alt="">
                         <span class="contacts-up">Contacts</span>
                     </a>
-                    <form action="#" method="post" class="ml-5" id="datatablesapi">
+                    <form action="#" method="post" class="ml-5">
                       <i class="fa-solid fa-magnifying-glass search-icon-top"></i>
                       <input type="search" name="search-contact" id="search-contact" placeholder="Seach">
                     </form>
@@ -193,20 +193,5 @@ contact_bg.onclick = () =>{
     count_contact.classList.toggle('show');
 
 }
-
-$(document).ready(function () {
-        $('#datatablesapi').DataTable({
-            "pagingType" : "full_numbers",
-            "lengthMenu": [
-                [10,25,50,-1],
-                [10,25,50,"All"]
-            ],
-            responsive : true,
-            language : {
-                search : "_INPUT_",
-                searchPlaceholder: "search cse teacher"
-            }, 
-        });
-    });
-
+ 
 </script>
